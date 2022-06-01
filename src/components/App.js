@@ -8,7 +8,8 @@ function App() {
   const [orders, setOrders] = useState([]);
 
   function addOrder(order) {
-    setOrders(orders.concat(order));
+    const updatedOrders = [...orders, order]
+    setOrders(updatedOrders);
   }
 
   const displayOrders = orders.map((order, idx) => {
@@ -20,7 +21,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
       </header>
-      <Form />
+      <Form addOrder={addOrder}/>
       <div className="ui raised container segment">
         <h1 className="ui block header">All Orders</h1>
         <div className="ui three cards">{displayOrders}</div>
