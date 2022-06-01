@@ -27,6 +27,8 @@ function Form({ addOrder }) {
   function handleChange(e) {
     const itemType = e.target.name;
     const item = e.target.value;
+    console.log("itemType:", itemType);
+    console.log("item:", item);
 
     if (formState[itemType].includes(item)) {
       setFormState({
