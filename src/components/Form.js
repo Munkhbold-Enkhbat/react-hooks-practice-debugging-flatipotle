@@ -13,6 +13,7 @@ const DEFAULT_STATE = {
 
 function Form({ addOrder }) {
   const [formState, setFormState] = useState(DEFAULT_STATE);
+  const [isChecked, setIsChecked] = useState('false')
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -27,8 +28,6 @@ function Form({ addOrder }) {
   function handleChange(e) {
     const itemType = e.target.name;
     const item = e.target.value;
-    console.log("itemType:", itemType);
-    console.log("item:", item);
 
     if (formState[itemType].includes(item)) {
       setFormState({

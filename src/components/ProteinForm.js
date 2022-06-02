@@ -6,6 +6,7 @@ import sofritas from "../images/protein/sofritas.png";
 import steak from "../images/protein/steak.png";
 
 function ProteinForm({ protein, handleChange }) {
+
   return (
     <>
       <h1>
@@ -19,7 +20,7 @@ function ProteinForm({ protein, handleChange }) {
               type="checkbox"
               value="Barbacoa"
               name="protein"
-              checked={protein.includes("Barbacoa")}
+              defaultChecked={protein.push("Barbacoa")}
               onChange={handleChange}
             />
             <img src={barbacoa} height="100px" width="100px" alt="barbacoa" />
@@ -34,7 +35,7 @@ function ProteinForm({ protein, handleChange }) {
               type="checkbox"
               value="Steak"
               name="protein"
-              checked={protein.includes("Steak")}
+              defaultChecked={protein.push("Steak")}
               onChange={handleChange}
             />
             <img src={steak} height="100px" width="100px" alt="steak" />
@@ -49,7 +50,7 @@ function ProteinForm({ protein, handleChange }) {
               type="checkbox"
               value="Chicken"
               name="protein"
-              checked={protein.includes("Chicken")}
+              defaultChecked={protein.push("Chicken")}
               onChange={handleChange}
             />
             <img src={chicken} height="100px" width="100px" alt="chicken" />
@@ -64,7 +65,7 @@ function ProteinForm({ protein, handleChange }) {
               type="checkbox"
               value="Carnitas"
               name="protein"
-              checked={protein.includes("Carnitas")}
+              defaultChecked={protein.push("Carnitas")}
               onChange={handleChange}
             />
             <img src={carnitas} height="100px" width="100px" alt="carnitas" />
@@ -79,7 +80,7 @@ function ProteinForm({ protein, handleChange }) {
               type="checkbox"
               value="Sofritas"
               name="protein"
-              checked={protein.includes("Sofritas")}
+              defaultChecked={protein.push("Sofritas")}
               onChange={handleChange}
             />
             <img src={sofritas} height="100px" width="100px" alt="sofritas" />

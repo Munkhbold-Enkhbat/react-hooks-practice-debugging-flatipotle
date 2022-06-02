@@ -19,7 +19,7 @@ function FillingForm({ fillings, handleChange }) {
               type="checkbox"
               value="White Rice"
               name="fillings"
-              checked={fillings.includes("White Rice")}
+              defaultChecked={fillings.push("White Rice")}
               onChange={handleChange}
             />
             <img
@@ -39,7 +39,7 @@ function FillingForm({ fillings, handleChange }) {
               type="checkbox"
               value="Brown Rice"
               name="fillings"
-              checked={fillings.includes("Brown Rice")}
+              defaultChecked={fillings.push("Brown Rice")}
               onChange={handleChange}
             />
             <img
@@ -59,7 +59,7 @@ function FillingForm({ fillings, handleChange }) {
               type="checkbox"
               value="Black Beans"
               name="fillings"
-              checked={fillings.includes("Black Beans")}
+              defaultChecked={fillings.push("Black Beans")}
               onChange={handleChange}
             />
             <img
@@ -79,7 +79,7 @@ function FillingForm({ fillings, handleChange }) {
               type="checkbox"
               value="Pinto Beans"
               name="fillings"
-              checked={fillings.includes("Pinto Beans")}
+              defaultChecked={fillings.push("Pinto Beans")}
               onChange={handleChange}
             />
             <img
@@ -99,7 +99,7 @@ function FillingForm({ fillings, handleChange }) {
               type="checkbox"
               value="Fajita Veggies"
               name="fillings"
-              checked={fillings.includes("Fajita Veggies")}
+              defaultChecked={fillings.push("Fajita Veggies")}
               onChange={handleChange}
             />
             <img

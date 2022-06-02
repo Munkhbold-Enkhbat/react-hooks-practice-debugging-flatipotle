@@ -6,7 +6,7 @@ function Order({ protein, fillings, toppings, sides }) {
   const [isClicked, setIsClicked] = useState(false);
 
   function handleClick() {
-    setIsClicked(!isClicked);
+    setIsClicked(isClicked => !isClicked);
   }
 
   return (
