@@ -5,7 +5,7 @@ import chicken from "../images/protein/chicken.png";
 import sofritas from "../images/protein/sofritas.png";
 import steak from "../images/protein/steak.png";
 
-function ProteinForm({ protein, handleChange }) {
+function ProteinForm(props) {
 
   return (
     <>
@@ -20,8 +20,8 @@ function ProteinForm({ protein, handleChange }) {
               type="checkbox"
               value="Barbacoa"
               name="protein"
-              defaultChecked={protein.push("Barbacoa")}
-              onChange={handleChange}
+              defaultChecked={props.protein.includes("Barbacoa")}
+              onChange={props.handleChange}
             />
             <img src={barbacoa} height="100px" width="100px" alt="barbacoa" />
             <label htmlFor="barbacoa">Barbacoa</label>
@@ -35,8 +35,8 @@ function ProteinForm({ protein, handleChange }) {
               type="checkbox"
               value="Steak"
               name="protein"
-              defaultChecked={protein.push("Steak")}
-              onChange={handleChange}
+              defaultChecked={props.protein.includes("Steak")}
+              onChange={props.handleChange}
             />
             <img src={steak} height="100px" width="100px" alt="steak" />
             <label htmlFor="steak">Steak</label>
@@ -50,8 +50,8 @@ function ProteinForm({ protein, handleChange }) {
               type="checkbox"
               value="Chicken"
               name="protein"
-              defaultChecked={protein.push("Chicken")}
-              onChange={handleChange}
+              defaultChecked={props.protein.includes("Chicken")}
+              onChange={props.handleChange}
             />
             <img src={chicken} height="100px" width="100px" alt="chicken" />
             <label htmlFor="chicken">Chicken</label>
@@ -65,8 +65,8 @@ function ProteinForm({ protein, handleChange }) {
               type="checkbox"
               value="Carnitas"
               name="protein"
-              defaultChecked={protein.push("Carnitas")}
-              onChange={handleChange}
+              defaultChecked={props.protein.includes("Carnitas")}
+              onChange={props.handleChange}
             />
             <img src={carnitas} height="100px" width="100px" alt="carnitas" />
             <label htmlFor="carnitas">Carnitas</label>
@@ -80,8 +80,8 @@ function ProteinForm({ protein, handleChange }) {
               type="checkbox"
               value="Sofritas"
               name="protein"
-              defaultChecked={protein.push("Sofritas")}
-              onChange={handleChange}
+              defaultChecked={props.protein.includes("Sofritas")}
+              onChange={props.handleChange}
             />
             <img src={sofritas} height="100px" width="100px" alt="sofritas" />
             <label htmlFor="sofritas">Sofritas</label>

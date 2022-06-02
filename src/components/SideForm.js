@@ -7,7 +7,7 @@ import drink from "../images/sides/drink.png";
 import taco from "../images/sides/taco.png";
 import tortilla from "../images/sides/tortilla.png";
 
-function SideForm({ sides, handleChange }) {
+function SideForm(props) {
   return (
     <>
       <h1>
@@ -21,8 +21,8 @@ function SideForm({ sides, handleChange }) {
               type="checkbox"
               value="Chips"
               name="sides"
-              defaultChecked={sides.push("Chips")}
-              onChange={handleChange}
+              defaultChecked={props.sides.includes("Chips")}
+              onChange={props.handleChange}
             />
             <img src={chips} height="100px" width="100px" alt="chips" />
             <label htmlFor="chips">Chips</label>
@@ -36,8 +36,8 @@ function SideForm({ sides, handleChange }) {
               type="checkbox"
               value="Chips & Salsa"
               name="sides"
-              defaultChecked={sides.push("Chips & Salsa")}
-              onChange={handleChange}
+              defaultChecked={props.sides.includes("Chips & Salsa")}
+              onChange={props.handleChange}
             />
             <img
               src={chipssalsa}
@@ -56,8 +56,8 @@ function SideForm({ sides, handleChange }) {
               type="checkbox"
               value="Chips & Guac"
               name="sides"
-              defaultChecked={sides.push("Chips & Guac")}
-              onChange={handleChange}
+              defaultChecked={props.sides.includes("Chips & Guac")}
+              onChange={props.handleChange}
             />
             <img
               src={chipsGuac}
@@ -76,8 +76,8 @@ function SideForm({ sides, handleChange }) {
               type="checkbox"
               value="Chips & Queso"
               name="sides"
-              defaultChecked={sides.push("Chips & Queso")}
-              onChange={handleChange}
+              defaultChecked={props.sides.includes("Chips & Queso")}
+              onChange={props.handleChange}
             />
             <img
               src={chipsQueso}
@@ -96,8 +96,8 @@ function SideForm({ sides, handleChange }) {
               type="checkbox"
               value="Tortilla"
               name="sides"
-              defaultChecked={sides.push("Tortilla")}
-              onChange={handleChange}
+              defaultChecked={props.sides.includes("Tortilla")}
+              onChange={props.handleChange}
             />
             <img src={tortilla} height="100px" width="100px" alt="tortilla" />
             <label htmlFor="tortila">Tortilla</label>
@@ -111,8 +111,8 @@ function SideForm({ sides, handleChange }) {
               type="checkbox"
               value="Taco"
               name="sides"
-              defaultChecked={sides.push("Taco")}
-              onChange={handleChange}
+              defaultChecked={props.sides.includes("Taco")}
+              onChange={props.handleChange}
             />
             <img src={taco} height="100px" width="100px" alt="taco" />
             <label htmlFor="taco">Taco</label>
@@ -126,8 +126,8 @@ function SideForm({ sides, handleChange }) {
               type="checkbox"
               value="Fountain Drink"
               name="sides"
-              defaultChecked={sides.push("Fountain Drink")}
-              onChange={handleChange}
+              defaultChecked={props.sides.includes("Fountain Drink")}
+              onChange={props.handleChange}
             />
             <img
               src={drink}

@@ -5,7 +5,7 @@ import fajitaVeg from "../images/fillings/fajita-veggies.png";
 import pintoBeans from "../images/fillings/pinto-beans.png";
 import whiteRice from "../images/fillings/white-rice.png";
 
-function FillingForm({ fillings, handleChange }) {
+function FillingForm(props) {
   return (
     <>
       <h1>
@@ -19,8 +19,8 @@ function FillingForm({ fillings, handleChange }) {
               type="checkbox"
               value="White Rice"
               name="fillings"
-              defaultChecked={fillings.push("White Rice")}
-              onChange={handleChange}
+              defaultChecked={props.fillings.includes("White Rice")}
+              onChange={props.handleChange}
             />
             <img
               src={whiteRice}
@@ -39,8 +39,8 @@ function FillingForm({ fillings, handleChange }) {
               type="checkbox"
               value="Brown Rice"
               name="fillings"
-              defaultChecked={fillings.push("Brown Rice")}
-              onChange={handleChange}
+              defaultChecked={props.fillings.includes("Brown Rice")}
+              onChange={props.handleChange}
             />
             <img
               src={brownRice}
@@ -59,8 +59,8 @@ function FillingForm({ fillings, handleChange }) {
               type="checkbox"
               value="Black Beans"
               name="fillings"
-              defaultChecked={fillings.push("Black Beans")}
-              onChange={handleChange}
+              defaultChecked={props.fillings.includes("Black Beans")}
+              onChange={props.handleChange}
             />
             <img
               src={blackBeans}
@@ -79,8 +79,8 @@ function FillingForm({ fillings, handleChange }) {
               type="checkbox"
               value="Pinto Beans"
               name="fillings"
-              defaultChecked={fillings.push("Pinto Beans")}
-              onChange={handleChange}
+              defaultChecked={props.fillings.includes("Pinto Beans")}
+              onChange={props.handleChange}
             />
             <img
               src={pintoBeans}
@@ -99,8 +99,8 @@ function FillingForm({ fillings, handleChange }) {
               type="checkbox"
               value="Fajita Veggies"
               name="fillings"
-              defaultChecked={fillings.push("Fajita Veggies")}
-              onChange={handleChange}
+              defaultChecked={props.fillings.includes("Fajita Veggies")}
+              onChange={props.handleChange}
             />
             <img
               src={fajitaVeg}

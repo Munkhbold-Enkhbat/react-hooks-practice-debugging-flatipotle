@@ -8,7 +8,7 @@ import medium from "../images/toppings/medium.png";
 import mild from "../images/toppings/mild.png";
 import sourCream from "../images/toppings/sour-cream.png";
 
-function ToppingForm({ toppings, handleChange }) {
+function ToppingForm(props) {
   return (
     <>
       <h1>
@@ -22,8 +22,8 @@ function ToppingForm({ toppings, handleChange }) {
               type="checkbox"
               value="Mild Hot Sauce"
               name="toppings"
-              defaultChecked={toppings.includes("Mild Hot Sauce")}
-              onChange={handleChange}
+              defaultChecked={props.toppings.includes("Mild Hot Sauce")}
+              onChange={props.handleChange}
             />
             <img src={mild} height="100px" width="100px" alt="mild hot sauce" />
             <label htmlFor="mild">Mild Hot Sauce</label>
@@ -37,8 +37,8 @@ function ToppingForm({ toppings, handleChange }) {
               type="checkbox"
               value="Medium Hot Sauce"
               name="toppings"
-              defaultChecked={toppings.includes("Medium Hot Sauce")}
-              onChange={handleChange}
+              defaultChecked={props.toppings.includes("Medium Hot Sauce")}
+              onChange={props.handleChange}
             />
             <img
               src={medium}
@@ -57,8 +57,8 @@ function ToppingForm({ toppings, handleChange }) {
               type="checkbox"
               value="HOT Hot Sauce"
               name="toppings"
-              defaultChecked={toppings.includes("HOT Hot Sauce")}
-              onChange={handleChange}
+              defaultChecked={props.toppings.includes("HOT Hot Sauce")}
+              onChange={props.handleChange}
             />
             <img src={hot} height="100px" width="100px" alt="hot sauce" />
             <label htmlFor="hot">HOT Hot Sauce</label>
@@ -72,8 +72,8 @@ function ToppingForm({ toppings, handleChange }) {
               type="checkbox"
               value="Corn Salsa"
               name="toppings"
-              defaultChecked={toppings.includes("Corn Salsa")}
-              onChange={handleChange}
+              defaultChecked={props.toppings.includes("Corn Salsa")}
+              onChange={props.handleChange}
             />
             <img
               src={cornSalsa}
@@ -92,8 +92,8 @@ function ToppingForm({ toppings, handleChange }) {
               type="checkbox"
               value="Sour Cream"
               name="toppings"
-              defaultChecked={toppings.includes("Sour Cream")}
-              onChange={handleChange}
+              defaultChecked={props.toppings.includes("Sour Cream")}
+              onChange={props.handleChange}
             />
             <img
               src={sourCream}
@@ -112,8 +112,8 @@ function ToppingForm({ toppings, handleChange }) {
               type="checkbox"
               value="Lettuce"
               name="toppings"
-              defaultChecked={toppings.includes("Lettuce")}
-              onChange={handleChange}
+              defaultChecked={props.toppings.includes("Lettuce")}
+              onChange={props.handleChange}
             />
             <img src={lettuce} height="100px" width="100px" alt="lettuce" />
             <label htmlFor="lettuce">Lettuce</label>
@@ -127,8 +127,8 @@ function ToppingForm({ toppings, handleChange }) {
               type="checkbox"
               value="Guac"
               name="toppings"
-              defaultChecked={toppings.push("Guac")}
-              onChange={handleChange}
+              defaultChecked={props.toppings.includes("Guac")}
+              onChange={props.handleChange}
             />
             <img src={guac} height="100px" width="100px" alt="guacamole" />
             <label htmlFor="guac">Guac</label>
@@ -142,8 +142,8 @@ function ToppingForm({ toppings, handleChange }) {
               type="checkbox"
               value="Cheese"
               name="toppings"
-              defaultChecked={toppings.push("Cheese")}
-              onChange={handleChange}
+              defaultChecked={props.toppings.includes("Cheese")}
+              onChange={props.handleChange}
             />
             <img src={cheese} height="100px" width="100px" alt="cheese" />
             <label htmlFor="cheese">Cheese</label>

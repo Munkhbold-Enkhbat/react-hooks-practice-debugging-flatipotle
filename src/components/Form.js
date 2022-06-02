@@ -13,7 +13,6 @@ const DEFAULT_STATE = {
 
 function Form({ addOrder }) {
   const [formState, setFormState] = useState(DEFAULT_STATE);
-  const [isChecked, setIsChecked] = useState('false')
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -22,7 +21,7 @@ function Form({ addOrder }) {
     setFormState({
       ...DEFAULT_STATE,
     });
-    e.target.reset();
+    // e.target.reset();
   }
 
   function handleChange(e) {
