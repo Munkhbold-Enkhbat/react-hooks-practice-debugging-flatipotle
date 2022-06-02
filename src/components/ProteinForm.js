@@ -20,7 +20,7 @@ function ProteinForm(props) {
               type="checkbox"
               value="Barbacoa"
               name="protein"
-              defaultChecked={props.protein.includes("Barbacoa")}
+              checked={props.protein.includes("Barbacoa")}
               onChange={props.handleChange}
             />
             <img src={barbacoa} height="100px" width="100px" alt="barbacoa" />
@@ -35,7 +35,7 @@ function ProteinForm(props) {
               type="checkbox"
               value="Steak"
               name="protein"
-              defaultChecked={props.protein.includes("Steak")}
+              checked={props.protein.includes("Steak")}
               onChange={props.handleChange}
             />
             <img src={steak} height="100px" width="100px" alt="steak" />
@@ -50,7 +50,7 @@ function ProteinForm(props) {
               type="checkbox"
               value="Chicken"
               name="protein"
-              defaultChecked={props.protein.includes("Chicken")}
+              checked={props.protein.includes("Chicken")}
               onChange={props.handleChange}
             />
             <img src={chicken} height="100px" width="100px" alt="chicken" />
@@ -65,7 +65,7 @@ function ProteinForm(props) {
               type="checkbox"
               value="Carnitas"
               name="protein"
-              defaultChecked={props.protein.includes("Carnitas")}
+              checked={props.protein.includes("Carnitas")}
               onChange={props.handleChange}
             />
             <img src={carnitas} height="100px" width="100px" alt="carnitas" />
@@ -80,7 +80,7 @@ function ProteinForm(props) {
               type="checkbox"
               value="Sofritas"
               name="protein"
-              defaultChecked={props.protein.includes("Sofritas")}
+              checked={props.protein.includes("Sofritas")}
               onChange={props.handleChange}
             />
             <img src={sofritas} height="100px" width="100px" alt="sofritas" />
